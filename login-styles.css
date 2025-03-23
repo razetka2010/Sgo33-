@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg'); /* Путь к изображению */
+    background-size: cover; /* Растягиваем изображение на весь экран */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+}
+
+.login-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px; /* Добавляем отступы для мобильных устройств */
+}
+
+.login-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Стили для формы входа */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.login-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-form button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    opacity: 0.9;
+}
+
+/* Стили для кнопок выбора роли */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-admin {
+    background-color: #dc3545; /* Красный цвет для администратора */
+}
+
+.btn-zavuch {
+    background-color: #17a2b8; /* Бирюзовый цвет для завуча */
+}
+
+.btn-teacher {
+    background-color: #007bff; /* Синий цвет для учителя */
+}
+
+.btn-student {
+    background-color: #ffc107; /* Желтый цвет для ученика */
+}
+
+/* Стили для ссылки "Назад" или "На главную" */
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Медиа-запросы для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px; /* Уменьшаем отступы для мобильных устройств */
+        margin: 10px; /* Уменьшаем внешние отступы */
+    }
+
+    .login-container h2 {
+        font-size: 20px; /* Уменьшаем размер заголовка */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Уменьшаем размер кнопок */
+        font-size: 14px;
+    }
+
+    .login-form input {
+        padding: 8px; /* Уменьшаем отступы в полях ввода */
+        font-size: 14px;
+    }
+
+    .login-form button {
+        padding: 8px; /* Уменьшаем отступы в кнопках */
+        font-size: 14px;
+    }
+
+    .back-link {
+        font-size: 12px; /* Уменьшаем размер ссылки */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        max-width: 90%; /* Уменьшаем максимальную ширину контейнера */
+    }
+
+    .login-container h2 {
+        font-size: 18px; /* Еще меньше размер заголовка */
+    }
+
+    .btn {
+        padding: 6px 12px; /* Еще меньше размер кнопок */
+        font-size: 12px;
+    }
+
+    .login-form input {
+        padding: 6px; /* Еще меньше отступы в полях ввода */
+        font-size: 12px;
+    }
+
+    .login-form button {
+        padding: 6px; /* Еще меньше отступы в кнопках */
+        font-size: 12px;
+    }
+
+    .back-link {
+        font-size: 10px; /* Еще меньше размер ссылки */
+    }
+}
